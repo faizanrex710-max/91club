@@ -227,9 +227,10 @@ transform:translateY(-4px);
 .mini-card img{
 width:100%;
 height:75px;
-object-fit:cover;
+object-fit:contain;
+background:#111;
 border-radius:10px;
-display:block;
+padding:4px;
 }
 
 .mini-card p{
