@@ -310,4 +310,21 @@ margin:auto;
 box-shadow:0 0 40px rgba(0,0,0,.35);
 }
 
+.footer-box{
+display:flex;
+justify-content:space-between;
+gap:10px;
+background:rgba(255,255,255,.12);
+padding:14px;
+border-radius:14px;
+margin-bottom:18px;
+font-size:13px;
+font-weight:600;
+}
+
+.footer-box span{
+flex:1;
+text-align:center;
+}
+
 }
