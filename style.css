@@ -1,246 +1,285 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-    background:#1d0000;
-    background:linear-gradient(180deg,#ff3b3b 0%,#d90000 18%,#730000 45%,#1a0000 70%,#000000 100%);
-    color:#fff;
-    overflow-x:hidden;
+background:linear-gradient(180deg,#ff4b4b 0%,#e60012 25%,#b3000f 60%,#8b000c 100%);
+color:#fff;
+overflow-x:hidden;
+max-width:430px;
+margin:auto;
+min-height:100vh;
 }
 
 a{
-    text-decoration:none;
+text-decoration:none;
 }
 
-header{
-    width:100%;
-    height:72px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 16px;
-    background:linear-gradient(180deg,#ff4747,#e60000);
-    box-shadow:0 4px 20px rgba(0,0,0,.35);
-    position:sticky;
-    top:0;
-    z-index:999;
+.header{
+height:72px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 15px;
+background:linear-gradient(180deg,#ff5d5d,#df0013);
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+position:sticky;
+top:0;
+z-index:999;
 }
 
 .logo{
-    font-size:30px;
-    font-weight:800;
-    color:#fff;
-    letter-spacing:1px;
+display:flex;
+align-items:center;
+gap:10px;
 }
 
-.header-buttons{
-    display:flex;
-    gap:10px;
+.logo-icon{
+width:42px;
+height:42px;
+border-radius:50%;
+background:#fff;
+color:#e60012;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:18px;
+font-weight:800;
 }
 
-.login-btn,
-.register-btn{
-    padding:10px 18px;
-    border-radius:12px;
-    border:2px solid rgba(255,255,255,.5);
-    color:#fff;
-    font-weight:700;
-    font-size:14px;
-    transition:.3s;
+.logo-text h2{
+font-size:18px;
+font-weight:800;
+line-height:1;
 }
 
-.login-btn{
-    background:rgba(255,255,255,.08);
+.logo-text span{
+font-size:11px;
+opacity:.9;
 }
 
-.register-btn{
-    background:rgba(255,255,255,.18);
+.header-btns{
+display:flex;
+gap:8px;
 }
 
-.login-btn:hover,
-.register-btn:hover{
-    transform:scale(1.05);
+.login,
+.register{
+padding:9px 14px;
+border-radius:12px;
+font-size:13px;
+font-weight:700;
+color:#fff;
+display:flex;
+align-items:center;
+gap:6px;
+}
+
+.login{
+background:rgba(255,255,255,.15);
+border:1px solid rgba(255,255,255,.25);
+}
+
+.register{
+background:#fff;
+color:#e60012;
 }
 
 .hero{
-    text-align:center;
-    padding:35px 20px;
+padding:35px 20px;
+text-align:center;
 }
 
-.hero h4{
-    color:#ffe082;
-    font-size:18px;
-    font-weight:700;
-    margin-bottom:8px;
+.welcome{
+display:inline-block;
+padding:8px 20px;
+border-radius:30px;
+background:rgba(255,255,255,.15);
+font-size:13px;
+font-weight:700;
+letter-spacing:2px;
+margin-bottom:18px;
 }
 
 .hero h1{
-    font-size:58px;
-    font-weight:900;
-    color:#fff;
-    line-height:1;
+font-size:50px;
+font-weight:800;
+margin-bottom:10px;
 }
 
-.hero h2{
-    margin-top:12px;
-    font-size:30px;
-    color:#ffd54f;
+.hero h3{
+font-size:24px;
+font-weight:700;
+margin-bottom:12px;
 }
 
 .hero p{
-    margin-top:14px;
-    color:#f5f5f5;
-    font-size:17px;
-    line-height:1.6;
+font-size:15px;
+opacity:.95;
+line-height:1.6;
+margin-bottom:25px;
 }
 
-.download-btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    width:220px;
-    height:54px;
-    margin-top:22px;
-    background:#ffffff;
-    color:#e60000;
-    font-size:20px;
-    font-weight:700;
-    border-radius:16px;
-    box-shadow:0 8px 25px rgba(0,0,0,.35);
-    transition:.3s;
+.download{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+width:190px;
+height:52px;
+margin:auto;
+background:#ffffff;
+color:#e60012;
+border-radius:14px;
+font-size:18px;
+font-weight:700;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+transition:.3s;
 }
 
-.download-btn:hover{
-    transform:translateY(-3px);
+.download:hover{
+transform:translateY(-3px);
 }
 
 .hero-buttons{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    margin-top:22px;
+display:flex;
+justify-content:center;
+gap:12px;
+margin-top:22px;
 }
 
-.hero-buttons a{
-    width:150px;
-    height:50px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:14px;
-    font-size:18px;
-    font-weight:700;
-    color:#fff;
+.hero-login,
+.hero-register{
+width:145px;
+height:48px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:14px;
+font-size:16px;
+font-weight:700;
+color:#fff;
+transition:.3s;
 }
 
 .hero-login{
-    background:#0dbb34;
+background:#0ea64a;
 }
 
 .hero-register{
-    background:#ffb300;
-    color:#111;
+background:#ffb100;
+color:#111;
 }
 
-.features{
-    margin:35px 15px;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:10px;
+.hero-login:hover,
+.hero-register:hover{
+transform:scale(1.04);
 }
 
 .feature-box{
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.15);
-    border-radius:16px;
-    padding:16px 10px;
-    text-align:center;
-    backdrop-filter:blur(10px);
+margin-top:30px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
 }
 
-.feature-box i{
-    font-size:28px;
-    color:#ffd54f;
-    margin-bottom:10px;
+.feature{
+background:rgba(255,255,255,.12);
+border-radius:16px;
+padding:18px 10px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+backdrop-filter:blur(12px);
 }
 
-.feature-box h3{
-    font-size:15px;
-    margin-bottom:6px;
+.feature i{
+font-size:28px;
+color:#ffd54f;
+margin-bottom:10px;
 }
 
-.feature-box p{
-    font-size:12px;
-    color:#ddd;
+.feature span{
+font-size:13px;
+font-weight:600;
+text-align:center;
 }
 
-/* ---------- Popular Games ---------- */
+/* ===========================
+   POPULAR GAMES
+=========================== */
 
 .popular{
-    padding:30px 15px 40px;
+padding:35px 15px;
 }
 
-.popular-title{
-    text-align:center;
-    font-size:34px;
-    font-weight:800;
-    color:#fff;
-    margin-bottom:20px;
+.popular h2{
+text-align:center;
+font-size:30px;
+font-weight:800;
+margin-bottom:20px;
 }
 
-.games-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:15px;
+.games{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
 }
 
-.game-card{
-    background:#8d0000;
-    border-radius:18px;
-    overflow:hidden;
-    border:2px solid rgba(255,255,255,.12);
-    transition:.35s;
-    box-shadow:0 10px 25px rgba(0,0,0,.35);
+.card{
+background:linear-gradient(180deg,#ff5a5a,#d4001a);
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+transition:.3s;
 }
 
-.game-card:hover{
-    transform:translateY(-5px);
+.card:hover{
+transform:translateY(-6px);
 }
 
-.game-card img{
-    width:100%;
-    display:block;
+.card img{
+width:100%;
+display:block;
+aspect-ratio:1/1;
+object-fit:cover;
 }
 
-.game-card h3{
-    text-align:center;
-    padding:14px;
-    font-size:18px;
-    color:#fff;
-    font-weight:700;
+.card p{
+padding:14px;
+text-align:center;
+font-size:17px;
+font-weight:700;
+color:#fff;
 }
+
+/* ===========================
+   FOOTER
+=========================== */
 
 footer{
-    padding:25px;
-    text-align:center;
-    color:#ddd;
-    font-size:14px;
+margin-top:35px;
+padding:25px 15px;
+text-align:center;
+font-size:13px;
+color:#fff;
+background:rgba(0,0,0,.15);
 }
 
-/* Mobile Only */
+/* ===========================
+   MOBILE ONLY
+=========================== */
 
-@media (min-width:600px){
+@media (min-width:431px){
 
 body{
-
 max-width:430px;
-
 margin:auto;
-
+box-shadow:0 0 40px rgba(0,0,0,.35);
 }
 
 }
