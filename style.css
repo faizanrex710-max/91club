@@ -274,14 +274,6 @@ background:rgba(0,0,0,.15);
    MOBILE ONLY
 =========================== */
 
-@media (min-width:431px){
-
-body{
-max-width:430px;
-margin:auto;
-box-shadow:0 0 40px rgba(0,0,0,.35);
-}
-
 .card{
 position:relative;
 overflow:hidden;
@@ -308,6 +300,14 @@ font-weight:800;
 color:#fff;
 margin:0;
 text-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+
+@media (min-width:431px){
+
+body{
+max-width:430px;
+margin:auto;
+box-shadow:0 0 40px rgba(0,0,0,.35);
 }
 
 }
