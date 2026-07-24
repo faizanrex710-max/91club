@@ -2,29 +2,39 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-    background:#0f172a;
+    background:#1d0000;
+    background:linear-gradient(180deg,#ff3b3b 0%,#d90000 18%,#730000 45%,#1a0000 70%,#000000 100%);
     color:#fff;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
 }
 
 header{
-    background:#ff5b5b;
-    padding:15px 20px;
+    width:100%;
+    height:72px;
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
+    padding:0 16px;
+    background:linear-gradient(180deg,#ff4747,#e60000);
+    box-shadow:0 4px 20px rgba(0,0,0,.35);
     position:sticky;
     top:0;
-    z-index:1000;
+    z-index:999;
 }
 
 .logo{
-    font-size:26px;
-    font-weight:bold;
+    font-size:30px;
+    font-weight:800;
     color:#fff;
+    letter-spacing:1px;
 }
 
 .header-buttons{
@@ -34,81 +44,152 @@ header{
 
 .login-btn,
 .register-btn{
-    text-decoration:none;
-    color:#fff;
     padding:10px 18px;
-    border-radius:8px;
-    font-weight:bold;
+    border-radius:12px;
+    border:2px solid rgba(255,255,255,.5);
+    color:#fff;
+    font-weight:700;
+    font-size:14px;
     transition:.3s;
 }
 
 .login-btn{
-    background:#22c55e;
+    background:rgba(255,255,255,.08);
 }
 
 .register-btn{
-    background:#f59e0b;
+    background:rgba(255,255,255,.18);
 }
 
 .login-btn:hover,
 .register-btn:hover{
-    transform:translateY(-2px);
+    transform:scale(1.05);
 }
 
 .hero{
     text-align:center;
-    padding:50px 20px;
+    padding:35px 20px;
 }
 
 .hero h4{
-    color:#fbbf24;
-    letter-spacing:2px;
-    margin-bottom:10px;
+    color:#ffe082;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:8px;
 }
 
 .hero h1{
-    font-size:48px;
-    margin-bottom:10px;
-}
-
-.hero h1 span{
-    color:#ff5b5b;
+    font-size:58px;
+    font-weight:900;
+    color:#fff;
+    line-height:1;
 }
 
 .hero h2{
-    font-size:24px;
-    margin-bottom:15px;
+    margin-top:12px;
+    font-size:30px;
+    color:#ffd54f;
 }
 
 .hero p{
-    color:#cbd5e1;
-    margin-bottom:25px;
+    margin-top:14px;
+    color:#f5f5f5;
+    font-size:17px;
     line-height:1.6;
 }
 
-.apk-btn{
-    display:inline-block;
-    background:#ff5b5b;
-    color:#fff;
-    padding:14px 30px;
-    border-radius:10px;
-    text-decoration:none;
-    font-weight:bold;
+.download-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:220px;
+    height:54px;
+    margin-top:22px;
+    background:#ffffff;
+    color:#e60000;
+    font-size:20px;
+    font-weight:700;
+    border-radius:16px;
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
     transition:.3s;
 }
 
-.apk-btn:hover{
-    background:#ef4444;
+.download-btn:hover{
+    transform:translateY(-3px);
 }
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:22px;
+}
+
+.hero-buttons a{
+    width:150px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:14px;
+    font-size:18px;
+    font-weight:700;
+    color:#fff;
+}
+
+.hero-login{
+    background:#0dbb34;
+}
+
+.hero-register{
+    background:#ffb300;
+    color:#111;
+}
+
+.features{
+    margin:35px 15px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.feature-box{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:16px;
+    padding:16px 10px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+}
+
+.feature-box i{
+    font-size:28px;
+    color:#ffd54f;
+    margin-bottom:10px;
+}
+
+.feature-box h3{
+    font-size:15px;
+    margin-bottom:6px;
+}
+
+.feature-box p{
+    font-size:12px;
+    color:#ddd;
+}
+
+/* ---------- Popular Games ---------- */
 
 .popular{
-    padding:40px 20px;
+    padding:30px 15px 40px;
 }
 
-.popular h2{
+.popular-title{
     text-align:center;
-    margin-bottom:25px;
-    font-size:28px;
+    font-size:34px;
+    font-weight:800;
+    color:#fff;
+    margin-bottom:20px;
 }
 
 .games-grid{
@@ -118,11 +199,12 @@ header{
 }
 
 .game-card{
-    background:#1e293b;
-    border-radius:15px;
+    background:#8d0000;
+    border-radius:18px;
     overflow:hidden;
-    text-align:center;
-    transition:.3s;
+    border:2px solid rgba(255,255,255,.12);
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
 }
 
 .game-card:hover{
@@ -135,43 +217,30 @@ header{
 }
 
 .game-card h3{
-    padding:12px;
-    font-size:16px;
+    text-align:center;
+    padding:14px;
+    font-size:18px;
+    color:#fff;
+    font-weight:700;
 }
 
 footer{
+    padding:25px;
     text-align:center;
-    padding:20px;
-    color:#94a3b8;
+    color:#ddd;
     font-size:14px;
 }
 
-@media(max-width:600px){
+/* Mobile Only */
 
-header{
-    padding:12px;
-}
+@media (min-width:600px){
 
-.logo{
-    font-size:22px;
-}
+body{
 
-.login-btn,
-.register-btn{
-    padding:8px 14px;
-    font-size:14px;
-}
+max-width:430px;
 
-.hero h1{
-    font-size:38px;
-}
+margin:auto;
 
-.hero h2{
-    font-size:20px;
-}
-
-.games-grid{
-    grid-template-columns:repeat(2,1fr);
 }
 
 }
