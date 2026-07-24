@@ -287,4 +287,27 @@ position:relative;
 overflow:hidden;
 }
 
+.section-title{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:14px;
+margin-bottom:25px;
+}
+
+.section-title span{
+width:55px;
+height:4px;
+border-radius:20px;
+background:linear-gradient(90deg,#ffcc00,#ff3b3b);
+}
+
+.section-title h2{
+font-size:32px;
+font-weight:800;
+color:#fff;
+margin:0;
+text-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+
 }
