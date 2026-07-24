@@ -282,4 +282,28 @@ margin:auto;
 box-shadow:0 0 40px rgba(0,0,0,.35);
 }
 
+.card{
+position:relative;
+overflow:hidden;
+}
+
+.ribbon{
+position:absolute;
+top:14px;
+left:-28px;
+width:90px;
+background:#ff2b2b;
+color:#fff;
+text-align:center;
+font-size:12px;
+font-weight:700;
+padding:5px 0;
+transform:rotate(-45deg);
+z-index:10;
+}
+
+.new{
+background:#ff9800;
+}
+
 }
