@@ -313,18 +313,19 @@ box-shadow:0 0 40px rgba(0,0,0,.35);
 .footer-box{
 display:flex;
 justify-content:space-between;
+align-items:center;
 gap:10px;
-background:rgba(255,255,255,.12);
-padding:14px;
-border-radius:14px;
+padding:12px;
 margin-bottom:18px;
-font-size:13px;
-font-weight:600;
+background:rgba(255,255,255,.12);
+border-radius:14px;
 }
 
 .footer-box span{
 flex:1;
 text-align:center;
+font-size:14px;
+font-weight:600;
 }
 
 }
