@@ -89,6 +89,7 @@ flex-direction:column;
 align-items:center;
 text-align:center;
 gap:25px;
+padding-bottom:80px;
 }
 
 .right{
@@ -99,7 +100,7 @@ justify-content:center;
 }
 
 .phone{
-width:330px;
+width:380px;
 max-width:95%;
 background:#141414;
 border:5px solid #333;
