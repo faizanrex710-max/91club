@@ -8,6 +8,7 @@ font-family:'Poppins',sans-serif;
 body{
 background:#090909;
 color:#fff;
+overflow-x:hidden;
 }
 
 .header{
@@ -15,20 +16,22 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-padding:18px 6%;
-background:linear-gradient(90deg,#ff3d5a,#ff5a5f);
+padding:16px 6%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-z-index:999;
+background:linear-gradient(90deg,#ff3d5a,#ff6a5f);
+z-index:1000;
+box-shadow:0 4px 20px rgba(0,0,0,.35);
 }
 
 .logo{
 display:flex;
 align-items:center;
-gap:8px;
-font-size:34px;
+gap:10px;
+font-size:30px;
 font-weight:800;
+color:#fff;
 }
 
 .logo i{
@@ -37,22 +40,23 @@ font-size:28px;
 
 .top-buttons{
 display:flex;
-gap:18px;
+gap:12px;
 }
 
 .login-btn,
 .register-btn{
-padding:14px 34px;
-border-radius:14px;
 text-decoration:none;
+padding:12px 26px;
+border-radius:12px;
+font-size:16px;
 font-weight:700;
-font-size:18px;
 transition:.3s;
 }
 
 .login-btn{
-background:#ff2748;
+background:#ffffff22;
 color:#fff;
+border:1px solid rgba(255,255,255,.35);
 }
 
 .register-btn{
@@ -60,50 +64,70 @@ background:#fff;
 color:#111;
 }
 
+.login-btn:hover,
+.register-btn:hover{
+transform:translateY(-2px);
+}
+
 .hero{
+min-height:100vh;
+padding:120px 8% 70px;
 display:flex;
 align-items:center;
 justify-content:space-between;
 gap:60px;
-padding:80px 8%;
-min-height:90vh;
 flex-wrap:wrap;
 }
 
 .left{
 flex:1;
-min-width:300px;
+min-width:320px;
 }
 
 .left h4{
-color:#ff4668;
-font-size:22px;
-font-weight:700;
+font-size:20px;
+color:#ff6b81;
 margin-bottom:10px;
 }
 
 .left h1{
-font-size:72px;
+font-size:70px;
 font-weight:800;
-margin-bottom:10px;
 line-height:1;
+margin-bottom:12px;
 }
 
 .left h1 span{
-color:#ff4668;
+color:#ff3d5a;
 }
 
 .left h2{
-font-size:42px;
+font-size:38px;
 margin-bottom:20px;
 }
 
 .left p{
-font-size:20px;
-color:#cfcfcf;
+font-size:18px;
 line-height:1.8;
+color:#cfcfcf;
 margin-bottom:35px;
 max-width:520px;
+}
+
+.apk-btn{
+display:inline-block;
+padding:16px 30px;
+background:#ff3d5a;
+color:#fff;
+text-decoration:none;
+border-radius:14px;
+font-size:18px;
+font-weight:700;
+transition:.3s;
+}
+
+.apk-btn:hover{
+transform:translateY(-3px);
 }
 
 .right{
@@ -115,38 +139,38 @@ align-items:center;
 
 .phone{
 width:340px;
-background:#151515;
-border:6px solid #3a3a3a;
+background:#141414;
+border:5px solid #333;
 border-radius:40px;
-padding:25px;
-box-shadow:0 0 60px rgba(255,70,104,.45);
-transform:rotate(-12deg);
+padding:22px;
+transform:rotate(-10deg);
+box-shadow:0 0 45px rgba(255,61,90,.45);
 transition:.4s;
 }
 
 .phone:hover{
-transform:rotate(-8deg) scale(1.03);
+transform:rotate(-6deg) scale(1.03);
 }
 
 .phone h3{
 text-align:center;
+font-size:26px;
 margin-bottom:18px;
-font-size:28px;
 }
 
 .phone-buttons{
 display:flex;
-gap:12px;
-margin-bottom:20px;
+gap:10px;
+margin-bottom:18px;
 }
 
 .phone-buttons button{
 flex:1;
-padding:14px;
+padding:12px;
 border:none;
-border-radius:12px;
+border-radius:10px;
 font-weight:700;
-font-size:18px;
+cursor:pointer;
 }
 
 .phone-buttons button:first-child{
@@ -156,151 +180,12 @@ color:#fff;
 
 .phone-buttons button:last-child{
 background:#fff;
+color:#111;
 }
 
 .phone h4{
-margin-bottom:18px;
-}
-
-.phone-games{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:14px;
-}
-
-.phone-games div{
-background:#1d1d1d;
-padding:22px 10px;
-border-radius:12px;
-text-align:center;
-font-weight:600;
-transition:.3s;
-}
-
-.phone-games div:hover{
-background:#ff3d5a;
-}
-@media (max-width:768px){
-
-.header{
-padding:12px 15px;
-}
-
-.logo{
-font-size:22px;
-}
-
-.top-buttons{
-gap:8px;
-}
-
-.login-btn,
-.register-btn{
-padding:10px 18px;
-font-size:15px;
-}
-
-.hero{
-padding:100px 20px 40px;
-flex-direction:column;
-text-align:center;
-}
-
-.left h1{
-font-size:64px;
-}
-
-.left h2{
-font-size:32px;
-}
-
-.left p{
+margin-bottom:14px;
 font-size:18px;
-}
-
-.phone{
-width:320px;
-max-width:100%;
-background:#111;
-border-radius:35px;
-padding:20px;
-border:4px solid #333;
-transform:none;
-margin-top:40px;
-box-shadow:0 0 50px rgba(255,60,90,.45);
-}
-.popular{
-padding:40px 20px;
-}
-
-.popular h2{
-text-align:center;
-font-size:36px;
-margin-bottom:25px;
-}
-
-.games{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:15px;
-}
-
-.card{
-background:#181818;
-border-radius:18px;
-padding:15px;
-text-align:center;
-border:1px solid #333;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-border-color:#ff3d5a;
-}
-
-.card img{
-width:100%;
-height:120px;
-object-fit:cover;
-border-radius:12px;
-background:#2a2a2a;
-}
-
-.card h3{
-margin-top:12px;
-font-size:18px;
-color:#fff;
-}
-.action-buttons{
-display:flex;
-flex-direction:column;
-gap:15px;
-padding:25px 20px;
-}
-
-.action-btn{
-display:block;
-text-align:center;
-padding:18px;
-border-radius:16px;
-text-decoration:none;
-font-size:22px;
-font-weight:700;
-color:#fff;
-}
-
-.signup{
-background:#ff3d5a;
-}
-
-.login{
-background:#2f80ed;
-}
-
-.apk{
-background:#ff3d5a;
-}
 }
 
 .phone-games{
@@ -315,6 +200,13 @@ background:#1d2436;
 border-radius:12px;
 padding:8px;
 text-align:center;
+transition:.3s;
+cursor:pointer;
+}
+
+.mini-card:hover{
+background:#ff3d5a;
+transform:translateY(-4px);
 }
 
 .mini-card img{
@@ -322,6 +214,7 @@ width:100%;
 height:70px;
 object-fit:cover;
 border-radius:10px;
+display:block;
 }
 
 .mini-card p{
@@ -329,4 +222,450 @@ margin-top:6px;
 font-size:12px;
 font-weight:600;
 color:#fff;
+}
+
+.action-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:40px 8%;
+flex-wrap:wrap;
+}
+
+.action-btn{
+padding:16px 34px;
+border-radius:14px;
+text-decoration:none;
+font-size:18px;
+font-weight:700;
+color:#fff;
+transition:.3s;
+}
+
+.signup{
+background:#ff3d5a;
+}
+
+.login{
+background:#2f80ed;
+}
+
+.apk{
+background:#ff7a00;
+}
+
+.action-btn:hover{
+transform:translateY(-3px);
+}
+
+.popular{
+padding:70px 8%;
+}
+
+.popular h2{
+text-align:center;
+font-size:42px;
+margin-bottom:35px;
+}
+
+.games{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.card{
+background:#181818;
+border-radius:18px;
+padding:15px;
+border:1px solid #2f2f2f;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#ff3d5a;
+box-shadow:0 0 20px rgba(255,61,90,.35);
+}
+
+.card img{
+width:100%;
+height:170px;
+object-fit:cover;
+border-radius:14px;
+}
+
+.card h3{
+margin-top:14px;
+font-size:18px;
+font-weight:700;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:768px){
+
+.header{
+padding:12px 16px;
+}
+
+.logo{
+font-size:22px;
+}
+
+.logo i{
+font-size:20px;
+}
+
+.top-buttons{
+gap:8px;
+}
+
+.login-btn,
+.register-btn{
+padding:10px 16px;
+font-size:14px;
+}
+
+.hero{
+padding:90px 20px 40px;
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+.left h1{
+font-size:48px;
+}
+
+.left h2{
+font-size:28px;
+}
+
+.left p{
+font-size:16px;
+max-width:100%;
+}
+
+.right{
+width:100%;
+}
+
+.phone{
+width:100%;
+max-width:320px;
+transform:none;
+margin:auto;
+}
+
+.phone:hover{
+transform:scale(1.02);
+}
+
+.phone-games{
+grid-template-columns:repeat(2,1fr);
+}
+
+.action-buttons{
+padding:25px 20px;
+flex-direction:column;
+}
+
+.action-btn{
+width:100%;
+text-align:center;
+}
+
+.popular{
+padding:40px 20px;
+}
+
+.popular h2{
+font-size:32px;
+}
+
+.games{
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.card img{
+height:120px;
+}
+
+.card h3{
+font-size:16px;
+}
+
+}
+
+@media (max-width:480px){
+
+.left h1{
+font-size:40px;
+}
+
+.left h2{
+font-size:24px;
+}
+
+.phone{
+padding:18px;
+}
+
+.games{
+grid-template-columns:1fr;
+}
+
+.card img{
+height:180px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:768px){
+
+.header{
+padding:12px 16px;
+}
+
+.logo{
+font-size:22px;
+}
+
+.logo i{
+font-size:20px;
+}
+
+.top-buttons{
+gap:8px;
+}
+
+.login-btn,
+.register-btn{
+padding:10px 16px;
+font-size:14px;
+}
+
+.hero{
+padding:90px 20px 40px;
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+.left h1{
+font-size:48px;
+}
+
+.left h2{
+font-size:28px;
+}
+
+.left p{
+font-size:16px;
+max-width:100%;
+}
+
+.right{
+width:100%;
+}
+
+.phone{
+width:100%;
+max-width:320px;
+transform:none;
+margin:auto;
+}
+
+.phone:hover{
+transform:scale(1.02);
+}
+
+.phone-games{
+grid-template-columns:repeat(2,1fr);
+}
+
+.action-buttons{
+padding:25px 20px;
+flex-direction:column;
+}
+
+.action-btn{
+width:100%;
+text-align:center;
+}
+
+.popular{
+padding:40px 20px;
+}
+
+.popular h2{
+font-size:32px;
+}
+
+.games{
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.card img{
+height:120px;
+}
+
+.card h3{
+font-size:16px;
+}
+
+}
+
+@media (max-width:480px){
+
+.left h1{
+font-size:40px;
+}
+
+.left h2{
+font-size:24px;
+}
+
+.phone{
+padding:18px;
+}
+
+.games{
+grid-template-columns:1fr;
+}
+
+.card img{
+height:180px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:768px){
+
+.header{
+padding:12px 16px;
+}
+
+.logo{
+font-size:22px;
+}
+
+.logo i{
+font-size:20px;
+}
+
+.top-buttons{
+gap:8px;
+}
+
+.login-btn,
+.register-btn{
+padding:10px 16px;
+font-size:14px;
+}
+
+.hero{
+padding:90px 20px 40px;
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+.left h1{
+font-size:48px;
+}
+
+.left h2{
+font-size:28px;
+}
+
+.left p{
+font-size:16px;
+max-width:100%;
+}
+
+.right{
+width:100%;
+}
+
+.phone{
+width:100%;
+max-width:320px;
+transform:none;
+margin:auto;
+}
+
+.phone:hover{
+transform:scale(1.02);
+}
+
+.phone-games{
+grid-template-columns:repeat(2,1fr);
+}
+
+.action-buttons{
+padding:25px 20px;
+flex-direction:column;
+}
+
+.action-btn{
+width:100%;
+text-align:center;
+}
+
+.popular{
+padding:40px 20px;
+}
+
+.popular h2{
+font-size:32px;
+}
+
+.games{
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.card img{
+height:120px;
+}
+
+.card h3{
+font-size:16px;
+}
+
+}
+
+@media (max-width:480px){
+
+.left h1{
+font-size:40px;
+}
+
+.left h2{
+font-size:24px;
+}
+
+.phone{
+padding:18px;
+}
+
+.games{
+grid-template-columns:1fr;
+}
+
+.card img{
+height:180px;
+}
+
 }
