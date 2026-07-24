@@ -9,6 +9,10 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 background:#090909;
 color:#fff;
@@ -24,27 +28,27 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-padding:15px 20px;
+height:70px;
+padding:0 20px;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
 background:linear-gradient(90deg,#ff3d5a,#ff6b5b);
-z-index:999;
 box-shadow:0 5px 20px rgba(0,0,0,.35);
+z-index:999;
 }
 
 .logo{
 display:flex;
 align-items:center;
 gap:8px;
-font-size:28px;
+font-size:26px;
 font-weight:800;
 color:#fff;
 }
 
 .logo i{
-font-size:24px;
-color:#fff;
+font-size:22px;
 }
 
 .top-buttons{
@@ -55,16 +59,16 @@ gap:10px;
 .login-btn,
 .register-btn{
 text-decoration:none;
-padding:10px 22px;
+padding:10px 20px;
 border-radius:12px;
-font-weight:700;
 font-size:15px;
+font-weight:700;
 transition:.3s;
 }
 
 .login-btn{
 background:rgba(255,255,255,.15);
-border:1px solid rgba(255,255,255,.25);
+border:1px solid rgba(255,255,255,.3);
 color:#fff;
 }
 
@@ -88,8 +92,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 text-align:center;
-gap:25px;
-padding-bottom:80px;
+gap:28px;
 }
 
 .right{
@@ -100,14 +103,13 @@ justify-content:center;
 }
 
 .phone{
-width:380px;
+width:340px;
 max-width:95%;
 background:#141414;
-border:5px solid #333;
-border-radius:38px;
+border:5px solid #303030;
+border-radius:36px;
 padding:18px;
-box-shadow:0 0 40px rgba(255,61,90,.45);
-transform:none;
+box-shadow:0 0 40px rgba(255,61,90,.35);
 }
 
 .phone h3{
@@ -127,6 +129,7 @@ flex:1;
 padding:12px;
 border:none;
 border-radius:10px;
+font-size:15px;
 font-weight:700;
 cursor:pointer;
 }
@@ -142,7 +145,6 @@ color:#111;
 }
 
 .left{
-width:100%;
 max-width:520px;
 }
 
@@ -153,7 +155,7 @@ margin-bottom:8px;
 }
 
 .left h1{
-font-size:52px;
+font-size:50px;
 font-weight:800;
 line-height:1.1;
 margin-bottom:10px;
@@ -199,42 +201,45 @@ transform:translateY(-3px);
 ========================= */
 
 .phone h4{
-margin-bottom:14px;
-font-size:18px;
 text-align:center;
+font-size:18px;
+margin-bottom:14px;
 }
 
 .phone-games{
 display:grid;
 grid-template-columns:repeat(2,1fr);
-gap:10px;
-margin-top:10px;
+gap:12px;
 }
 
 .mini-card{
-background:#1d2436;
-border-radius:12px;
-padding:8px;
+background:#1b2338;
+border-radius:14px;
+padding:10px;
 text-align:center;
 transition:.3s;
 cursor:pointer;
+border:1px solid rgba(255,255,255,.06);
 }
 
 .mini-card:hover{
-background:#ff3d5a;
 transform:translateY(-4px);
+background:#243252;
+border-color:#ff3d5a;
 }
 
 .mini-card img{
 width:100%;
-height:80px;
-object-fit:cover;
+height:90px;
+object-fit:contain;
+background:#101010;
 border-radius:10px;
+padding:5px;
 }
 
 .mini-card p{
-margin-top:6px;
-font-size:12px;
+margin-top:8px;
+font-size:13px;
 font-weight:600;
 color:#fff;
 }
@@ -247,14 +252,14 @@ color:#fff;
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:12px;
-padding:25px 20px;
+padding:30px 20px;
 }
 
 .action-btn{
 display:flex;
 align-items:center;
 justify-content:center;
-padding:16px;
+height:52px;
 border-radius:14px;
 text-decoration:none;
 font-size:16px;
@@ -272,7 +277,7 @@ background:#2f80ed;
 }
 
 .apk{
-background:#ff7a00;
+background:#ff9800;
 }
 
 .action-btn:hover{
@@ -296,45 +301,65 @@ margin-bottom:25px;
 .games{
 display:grid;
 grid-template-columns:repeat(2,1fr);
-gap:16px;
+gap:18px;
 }
 
 .card{
-background:#181818;
+background:#171717;
 border-radius:18px;
 padding:14px;
-border:1px solid #2b2b2b;
 text-align:center;
+border:1px solid #2b2b2b;
 transition:.3s;
 }
 
 .card:hover{
 transform:translateY(-5px);
 border-color:#ff3d5a;
-box-shadow:0 0 20px rgba(255,61,90,.35);
+box-shadow:0 0 18px rgba(255,61,90,.35);
 }
 
 .card img{
 width:100%;
-height:160px;
-object-fit:cover;
+height:150px;
+object-fit:contain;
+background:#111;
 border-radius:12px;
+padding:6px;
 }
 
 .card h3{
-margin-top:10px;
+margin-top:12px;
 font-size:16px;
 font-weight:700;
+color:#fff;
 }
 
 /* =========================
    RESPONSIVE
 ========================= */
 
+@media (max-width:992px){
+
+.hero{
+padding:90px 20px 40px;
+}
+
+.phone{
+width:330px;
+}
+
+.games{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
 @media (max-width:768px){
 
 .header{
-padding:12px 15px;
+height:65px;
+padding:0 15px;
 }
 
 .logo{
@@ -351,18 +376,18 @@ gap:8px;
 
 .login-btn,
 .register-btn{
-padding:9px 16px;
-font-size:14px;
+padding:8px 14px;
+font-size:13px;
 }
 
 .hero{
-padding:85px 18px 35px;
+padding:85px 16px 35px;
 gap:20px;
 }
 
 .phone{
-width:320px;
-max-width:100%;
+width:310px;
+padding:16px;
 }
 
 .left h1{
@@ -370,7 +395,7 @@ font-size:42px;
 }
 
 .left h2{
-font-size:26px;
+font-size:25px;
 }
 
 .left p{
@@ -378,16 +403,22 @@ font-size:15px;
 }
 
 .action-buttons{
-grid-template-columns:1fr;
+grid-template-columns:repeat(3,1fr);
+gap:8px;
+}
+
+.action-btn{
+height:48px;
+font-size:14px;
 }
 
 .games{
 grid-template-columns:repeat(2,1fr);
-gap:14px;
+gap:12px;
 }
 
 .card img{
-height:110px;
+height:120px;
 }
 
 }
@@ -395,22 +426,35 @@ height:110px;
 @media (max-width:480px){
 
 .header{
-padding:10px 12px;
+padding:0 12px;
 }
 
 .logo{
 font-size:18px;
 }
 
+.logo i{
+font-size:17px;
+}
+
+.top-buttons{
+gap:6px;
+}
+
 .login-btn,
 .register-btn{
-padding:8px 12px;
-font-size:12px;
+padding:7px 10px;
+font-size:11px;
+}
+
+.hero{
+padding:80px 12px 30px;
 }
 
 .phone{
-width:300px;
-padding:16px;
+width:290px;
+padding:14px;
+border-radius:30px;
 }
 
 .phone h3{
@@ -419,7 +463,15 @@ font-size:20px;
 
 .phone-buttons button{
 padding:10px;
-font-size:13px;
+font-size:12px;
+}
+
+.phone-games{
+gap:8px;
+}
+
+.mini-card img{
+height:75px;
 }
 
 .left h1{
@@ -435,12 +487,17 @@ font-size:14px;
 }
 
 .apk-btn{
-font-size:18px;
+font-size:17px;
 padding:14px;
+}
+
+.action-buttons{
+grid-template-columns:1fr;
 }
 
 .games{
 grid-template-columns:repeat(2,1fr);
+gap:10px;
 }
 
 .card{
@@ -448,7 +505,7 @@ padding:10px;
 }
 
 .card img{
-height:95px;
+height:100px;
 }
 
 .card h3{
