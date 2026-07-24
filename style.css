@@ -424,4 +424,36 @@ grid-template-columns:1fr;
 height:180px;
 }
 
+.features-bar{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:25px;
+padding:20px;
+flex-wrap:wrap;
+background:#111;
+border-top:1px solid #2a2a2a;
+border-bottom:1px solid #2a2a2a;
+}
+
+.feature{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:600;
+font-size:16px;
+color:#fff;
+}
+
+.feature i{
+width:42px;
+height:42px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:#ff3d5a;
+font-size:18px;
+}
+
 }
